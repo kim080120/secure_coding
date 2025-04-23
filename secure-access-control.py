@@ -9,7 +9,7 @@ class User:
         return f"User(id={self.id}, name={self.name}, age={self.age}, is_admin={self.is_admin})"
 
 def view_profile(user_id, requesting_user):
-    if requesting_user.is_admin or requesting_user.id = user_id:
+    if requesting_user.is_admin or requesting_user.id==user_id:
         # Fetch the user's profile information from the database
         profile = fetch_profile_from_database(user_id)
         
