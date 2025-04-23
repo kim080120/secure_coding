@@ -1,3 +1,5 @@
+from configuration import get_user_roles
+from authentication import get_current_user
 class User:
     def __init__(self, id, name, age, is_admin):
         self.id = id
